@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      body {
+        background-color: azure;
+        justify-content: center;
+        align-content: center;
+      }
+
+      div h1 {
+        color: blue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 300%;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      div p {
+        color: green;
+        font-family: "Courier New", Courier, monospace;
+        background-color: azure;
+        border-bottom: 10px solid blue;
+        padding-top: 15px;
+        margin: -10px;
+        width: auto;
+        height: 35px;
+        text-align: center;
+      }
+
+      .p01 {
+        color: blue;
+      }
+
+      table,
+      tr,
+      th {
+        width: 100px;
+        height: 100px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .names {
+        width: 100%;
+        text-align: center;
+        color: white;
+      }
+
+      .names tr th {
+        background-color: blue;
+      }
+
+      .names tr td {
+        color: black;
+      }
+
+      .tr01 {
+        background-color: blue;
+        color: white;
+      }
+
+      .tr02 {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Hi Everyone, I'm Anang</h1>
+      <p>Paragraf</p>
+      <p class="p01">Yang ini yang id-"p01".</p>
+    </div>
+    <br />
+    <div>
+      <table style="width: 100%">
+        <tr class="tr01">
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Novya</td>
+          <td>Selena</td>
+          <td>17</td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table class="names">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Novya</td>
+          <td>Selena</td>
+          <td>18</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
