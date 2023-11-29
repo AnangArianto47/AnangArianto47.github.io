@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
   --primaryTextColor: #232e35; /* Untuk title atau judul */
@@ -11,8 +11,8 @@
   --secondaryBackgroundColor: #fbfbfb;
   --thirdBackgroundColor: #f5f3fe;
 
-  --primaryIconColor: #5e7c60;
-  --primaryIconColorHover: #5e7c60;
+  --primaryIconColor: #7e74f1;
+  --primaryIconColorHover: #5d51e8;
 
   --sectionPadding: 6rem 0;
 
@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -121,27 +121,6 @@ a {
 }
 
 /* --- Logo and Navigation Menu --- */
-header{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--secondaryBackgroundColor);
-  transition: .5s ease-in;
-}
-
-header:hover{
-  transition: all ease-in;
-}
-
-header .main-container {
-  margin: 0 auto ;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -159,11 +138,7 @@ nav ul {
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-size: 35px;
-}
-
-.logo span{
-  color: var(--primaryIconColor);
+  font-size: 2rem;
 }
 
 .logo a {
@@ -171,22 +146,13 @@ nav ul {
 }
 
 /* Navigation Menu */
-.navlist {
+nav ul li {
   display: flex;
   align-items: center;
 }
 
-.navlist a {
+nav ul li a {
   color: var(--primaryTextColor);
-  transition: all .45s ease;
-}
-
-.navlist a:hover {
-  color: var(--primaryIconColorHover);
-}
-
-.navlist a.active{
-  color: var(--primaryIconColorHover);
 }
 
 /* Burger - Save for later on video */
@@ -207,8 +173,6 @@ nav ul {
   right: 35px;
 }
 
-
-
 /* Hero Section */
 #hero {
   height: 720px;
@@ -216,30 +180,12 @@ nav ul {
   grid-template-columns: 1fr 1fr;
   /* We're not going to use automatic template columns, because we need to know when the columns is go below. So we can exchange the order of the element */
   align-items: center;
-  font-size: 35px;
-}
-
-section{
-  padding: 160px 15% 120px;
-}
-
-.hero{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-color: var(--primaryBackgroundColor);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .hero-name {
   font-size: 3rem;
   font-weight: 700;
   margin: 0.5rem 0 1rem;
-  margin-bottom: 20px;
 }
 
 .hero-name span {
@@ -258,33 +204,22 @@ section{
 /* Services Section */
 #services {
   background-color: var(--secondaryBackgroundColor);
-  /* padding: var(--sectionPadding); */
-  /* margin-top: 20px; */
+  padding: var(--sectionPadding);
 }
 
-/* .services .pre-title {
+.services .pre-title {
   margin: 0 auto;
-} */
+}
 
 .services-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  text-align: center;
 }
 
 .service {
   padding: 3rem 2rem;
   text-align: center;
-  background: var(--borderColor);
+  background: var(--primaryBackgroundColor);
   border-radius: var(--itemBorderRadius);
-  box-shadow:  1px 8px 10px 2px rgba(0, 0, 0, 0.1);
-  transition: all .45s ease;
-}
-
-.service:hover{
-  transform: translateY(-8px);
-  cursor: pointer;
 }
 
 .service h4 {
@@ -319,8 +254,7 @@ section{
 
 /* Portfolios */
 #portfolios {
-  /* padding: var(--sectionPadding); */
-  /* margin-top: 20px; */
+  padding: var(--sectionPadding);
 }
 
 .portfolio {
@@ -385,13 +319,8 @@ section{
 
 /* Skills and Education */
 #skills {
-  /* padding: var(--sectionPadding); */
+  padding: var(--sectionPadding);
   background: var(--secondaryBackgroundColor);
-  /* margin-top: 20px; */
-}
-
-.skills{
-  margin-bottom: 30px;
 }
 
 .skills-grid {
@@ -450,8 +379,7 @@ section{
 
 /* Contact Section */
 #contact {
-  /* padding: var(--sectionPadding); */
-  
+  padding: var(--sectionPadding);
 }
 
 .contact {
